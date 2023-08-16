@@ -1,0 +1,14 @@
+{
+  "name": "GoogleChat Ctrl+Enter",
+  "description": "googleChatにて、Ctrl+Enterでメッセージ送信を行う",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["*://mail.google.com/*", "*://chat.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*", "*://chat.google.com/*"],
+      "js": ["index.js"],
+      "all_frames": true
+    }
+  ]
+}
